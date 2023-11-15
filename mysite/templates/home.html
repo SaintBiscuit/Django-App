@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+
+{% block title %}
+  Home
+{% endblock %}
+
+{% block body %}
+<h2><a href="{% url 'shopapp:products_list' %}">Приложение Shop</a></h2>
+<h2><a href="{% url 'myauth:login' %}">Приложение MyAuth</a></h2>
+<h2><a href="{% url 'blogapp:articles' %}">Приложение Blog</a></h2>
+{% endblock %}
